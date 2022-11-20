@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url(/Inter.ttf);
+}
+
+body{
+    font-family: Inter;
+    line-height: 1.5;
+    font-size: 24px;
+    background-image: url('./images/Margo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+@keyframes animate-type{
+    0%{
+        
+        font-variation-settings: "wght" 400, "slnt" 0;
+        letter-spacing: 0;
+    }
+
+    100%{
+        
+        font-variation-settings: "wght" 700, "slnt" -8.8;
+        letter-spacing: 5px;
+    }
+
+    
+}
+
+header{
+    position: fixed;
+    top: 64px;
+    left: 64px;
+    
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+
+    animation: animate-type 3s infinite alternate;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 64px;
+    left: 64px;
+}
